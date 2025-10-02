@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinharia Agnello</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="w-full h-min-screen ">
+    <header class="flex justify-between px-25 py-4 outline-2">
+        <div class="w-full flex h-10 items-center gap-10">
+            <h1 class="text-2xl">Vinharia Agnello</h1>
+            <nav class="">
+                <ul class="flex justify-center items-center gap-4">
+                    <a class="nav-link" href="/src/pages/vinhos.html">Vinhos</a>
+                    <a class="nav-link" href="/src/pages/harmonizacao.html">harmonização</a>
+                    <a class="nav-link" href="/src/pages/quem-somos.html">Quem somos</a>
+                    <a class="nav-link" href="/src/pages/contato.html">Contato</a>
+                </ul>
+            </nav>
+        </div>
+
+        <input
+        type="text"
+        placeholder="Procurar vinho..."
+        class="bg-gray-300 p-1 rounded-md"
+        >
+    </header>
+    <main class="px-25">
+        <div class="h-140 py-10 px-20 bg-auto bg-cover rounded-2xl mt-8 text-white flex flex-col justify-end bg-[url(/src/assets/imgs/hero-image.jpg)]">
+            <div>
+                <h2 class="text-6xl">Descubra novos vinhos</h2>
+                <p class="mt-2">Promoções exclusivas para assinantes da plataforma</p>
+                <button class="mt-8 bg-red-600 rounded-md px-4 py-2">Assinar</button>
+            </div>
+        </div>
+
+        <h3 class="text-2xl mt-10">Mais vendidos</h3>
+        <div class="grid grid-cols-6 mt-2">
+            <div class="outline-2 flex flex-col">
+                <img width="60px" src="/src/assets/imgs/vinho1.webp">
+                <p class="font-bold">Quinta de Bons Ventos 750ml</p>
+                <p class="text-gray-600">R$ 49,90</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
