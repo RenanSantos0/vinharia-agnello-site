@@ -1,30 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harmonização de Vinhos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header class="flex justify-between px-25 py-4 outline-2">
+
+<body class="bg-white text-gray-800 font-mono">
+
+    <header class="flex justify-between px-10 py-4 border-b-2 border-gray-300">
         <div class="w-full flex h-10 items-center gap-10">
-            <h1 class="text-2xl">Vinharia Agnello</h1>
-            <nav class="">
-                <ul class="flex justify-center items-center gap-4">
-                    <a class="nav-link" href="/src/pages/vinhos.html">Vinhos</a>
-                    <a class="nav-link" href="/src/pages/harmonizacao.html">harmonização</a>
-                    <a class="nav-link" href="/src/pages/quem-somos.html">Quem somos</a>
-                    <a class="nav-link" href="/src/pages/contato.html">Contato</a>
+            <h1 class="text-2xl font-bold">Vinharia Agnello</h1>
+            <nav>
+                <ul class="flex gap-4">
+                    <li><a class="nav-link" href="/src/pages/vinhos.html">Vinhos</a></li>
+                    <li><a class="nav-link font-semibold underline" href="/src/pages/harmonizacao.html">Harmonização</a></li>
+                    <li><a class="nav-link" href="/src/pages/quem-somos.html">Quem somos</a></li>
+                    <li><a class="nav-link" href="/src/pages/contato.html">Contato</a></li>
                 </ul>
             </nav>
         </div>
-
-        <input
-        type="text"
-        placeholder="Procurar vinho..."
-        class="bg-gray-300 p-1 rounded-md"
-        >
+        <input type="text" placeholder="Procurar vinho..." class="bg-gray-200 p-2 rounded-md" />
     </header>
+
+    <main class="px-10 py-8 max-w-5xl mx-auto">
+        <h2 class="text-4xl font-bold mb-6">Harmonização de Vinhos</h2>
+        <p class="mb-6 text-lg">Conheça os principais tipos de vinhos e descubra como combiná-los com diferentes alimentos para realçar o melhor de cada sabor.</p>
+
+        <section class="mb-10">
+            <h3 class="text-2xl font-semibold mb-2">Vinhos Tintos</h3>
+            <p class="mb-3">Combinam com carnes vermelhas, queijos fortes e massas com molhos encorpados.</p>
+            <ul class="list-disc pl-6 mb-4">
+                <li><strong>Cabernet Sauvignon:</strong> ótimo com churrasco, carne assada e queijos curados como parmesão.</li>
+                <li><strong>Pinot Noir:</strong> combina bem com frango grelhado, salmão e cogumelos.</li>
+                <li><strong>Malbec:</strong> excelente com carne de cordeiro e pratos picantes.</li>
+            </ul>
+            <img src="/src/assets/vinho2.jpeg">
+        </section>
+
+        <section class="mb-10">
+            <h3 class="text-2xl font-semibold mb-2">Vinhos Brancos</h3>
+            <p class="mb-3">Ideais para pratos mais leves, com sabores sutis e toques cítricos.</p>
+            <ul class="list-disc pl-6 mb-4">
+                <li><strong>Sauvignon Blanc:</strong> ótimo com frutos do mar, ceviche e saladas verdes.</li>
+                <li><strong>Chardonnay:</strong> vai bem com massas ao molho branco, peixes e frango assado.</li>
+                <li><strong>Riesling:</strong> combina com pratos levemente apimentados, como comida tailandesa.</li>
+            </ul>
+            <img src="/src/assets/vinho2.jpeg">
+        </section>
+
+        <section class="mb-10">
+            <h3 class="text-2xl font-semibold mb-2">Espumantes</h3>
+            <p class="mb-3">Refrescantes e versáteis, combinam com quase tudo, especialmente petiscos e entradas.</p>
+            <ul class="list-disc pl-6 mb-4">
+                <li><strong>Brut:</strong> perfeito com batata frita, sushi e canapés.</li>
+                <li><strong>Moscatel:</strong> ótimo para sobremesas leves e frutas.</li>
+            </ul>
+            <img src="/src/assets/vinho2.jpeg">
+        </section>
+
+        <section class="mb-10">
+            <h3 class="text-2xl font-semibold mb-2">Vinhos Doces</h3>
+            <p class="mb-3">Ideais para acompanhar sobremesas e criar contrastes com queijos azuis.</p>
+            <ul class="list-disc pl-6 mb-4">
+                <li><strong>Vinho do Porto:</strong> excelente com chocolate amargo ou gorgonzola.</li>
+                <li><strong>Late Harvest:</strong> combina com frutas secas e tortas doces.</li>
+            </ul>
+            <img src="/src/assets/vinho2.jpeg">
+        </section>
+    </main>
 </body>
+
+</html>
+
 </html>
