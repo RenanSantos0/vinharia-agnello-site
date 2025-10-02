@@ -4,6 +4,12 @@
     font-weight: 400;
     font-size: 50px;
 }
+.imagem-contato{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px; 
+}
 .titulo-emails{
       color: black;
     font-weight: 700;
@@ -17,10 +23,10 @@
     font-weight: 700;
 }
 .tema-botao{
-    color: black;
+    color: rgb(235, 199, 151);
     font-weight: 700;
     padding: 10px;
-    background-color: burlywood;
+    background-color: #6D2E46;
     border-radius: 10px;
 }
 .tema-borda-mensagem{
