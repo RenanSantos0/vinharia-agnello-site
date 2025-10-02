@@ -1,0 +1,39 @@
+.titulo-pagina-contatos{
+    color: black;
+    text-align: center;
+    font-weight: 400;
+    font-size: 50px;
+}
+.titulo-emails{
+      color: black;
+    font-weight: 700;
+}
+.titulo-endereço{
+    color: black;
+    font-weight: 700;
+}
+.titulo-redes-sociais{
+    color: black;
+    font-weight: 700;
+}
+.tema-botao{
+    color: black;
+    font-weight: 700;
+    padding: 10px;
+    background-color: burlywood;
+    border-radius: 10px;
+}
+.tema-borda-mensagem{
+    border: 3px black solid ;
+    width: 400px;
+}
+.tema-borda-nome{
+    border: 2px black solid ;
+    width: 180px;
+
+} 
+.tema-borda-email{
+    border: 2px black solid ;
+    width: 180px;
+
+}
