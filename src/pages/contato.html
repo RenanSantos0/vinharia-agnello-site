@@ -4,28 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Entre em contato com a Vinharia Agnello. Encontre nosso endereço em São Roque - SP, e-mails ou envie uma mensagem através do nosso formulário de contato.">
+    <meta name="keywords" content="contato, vinharia agnello, fale conosco, email, endereço, são roque, vinícola, vinhos">
+    <title>Vinharia Agnello - Contato</title>
     <link rel="stylesheet" href="/src/css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
-    <header class="flex justify-between px-25 py-4 outline-2">
-        <div class="w-full flex h-10 items-center gap-10">
-            <h1 class="text-2xl">Vinharia Agnello</h1>
+    <header class="page-header">
+        <div class="">
+            <a href="/index.html">
+                <h1 class="nome-logo">Vinharia Agnello</h1>
+            </a>
             <nav class="">
-                <ul class="flex justify-center items-center gap-4">
-                    <a class="nav-link" href="/src/pages/vinhos.html">Vinhos</a>
-                    <a class="nav-link" href="/src/pages/harmonizacao.html">harmonização</a>
-                    <a class="nav-link" href="/src/pages/quem-somos.html">Quem somos</a>
-                    <a class="nav-link" href="/src/pages/contato.html">Contato</a>
+                <ul class="">
+                    <li>
+                        <a class="nav-link" href="/src/pages/harmonizacao.html">Harmonização</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="/src/pages/quem-somos.html">Quem somos</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="/src/pages/contato.html">Contato</a>
+                    </li>
                 </ul>
             </nav>
         </div>
 
-        <input type="text" placeholder="Procurar vinho..." class="bg-gray-300 p-1 rounded-md">
+        <input type="text" placeholder="Procurar vinho..." class="searchbar" />
     </header>
-    <main>
+    <main class="conteudo-principal">
         <h2 class="titulo-pagina-contatos"> CONTATOS </h2>
         <br>
         <img src="/src/assets/imgs/contato-image.png" class="imagem-contato"></img>
@@ -59,6 +67,10 @@
             <button type="submit" class="tema-botao"> Enviar </button>
         </form>
     </main>
+    <footer class="footer">
+        <h2 class=" titulo-footer">Vinharia Agnello</h2>
+        <p class="paragrafo-footer">2025 Vinharia Agnello. Todos os direitos reservados.</p>
+    </footer>
 </body>
 
 </html>

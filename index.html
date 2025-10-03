@@ -1,49 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinharia Agnello</title>
-    <link rel="stylesheet" href="/src/css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bem-vindo à Vinharia Agnello. Descubra uma seleção exclusiva dos melhores vinhos, encontre promoções incríveis e conheça nossos rótulos mais vendidos.">
+    <meta name="keywords" content="vinho, vinharia, adega, comprar vinho, vinhos online, promoções de vinho, clube de vinhos, vinharia agnello, tempranillo, chianti, pinot noir">
+    <title>Vinharia Agnello - Home</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
 </head>
-<body class="w-full h-min-screen ">
-    <header class="flex justify-between px-25 py-4 outline-2">
-        <div class="w-full flex h-10 items-center gap-10">
-            <h1 class="text-2xl">Vinharia Agnello</h1>
+<body class="">
+    <header class="page-header">
+        <div class="">
+            <a href="/index.html">
+                <h1 class="nome-logo">Vinharia Agnello</h1>
+            </a>
             <nav class="">
-                <ul class="flex justify-center items-center gap-4">
-                    <a class="nav-link" href="/src/pages/vinhos.html">Vinhos</a>
-                    <a class="nav-link" href="/src/pages/harmonizacao.html">harmonização</a>
-                    <a class="nav-link" href="/src/pages/quem-somos.html">Quem somos</a>
-                    <a class="nav-link" href="/src/pages/contato.html">Contato</a>
+                <ul class="">
+                    <li>
+                        <a class="nav-link" href="/src/pages/harmonizacao.html">Harmonização</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="/src/pages/quem-somos.html">Quem somos</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="/src/pages/contato.html">Contato</a>
+                    </li>
                 </ul>
             </nav>
         </div>
 
-        <input
-        type="text"
-        placeholder="Procurar vinho..."
-        class="bg-gray-300 p-1 rounded-md"
-        >
+        <input type="text" placeholder="Procurar vinho..." class="searchbar" />
     </header>
-    <main class="px-25">
-        <div class="h-140 py-10 px-20 bg-auto bg-cover rounded-2xl mt-8 text-white flex flex-col justify-end bg-[url(/src/assets/imgs/hero-image.jpg)]">
+    <main class="conteudo-principal">
+        <div
+            class="poster">
             <div>
-                <h2 class="text-6xl">Descubra novos vinhos</h2>
-                <p class="mt-2">Promoções exclusivas para assinantes da plataforma</p>
-                <button class="mt-8 bg-red-600 rounded-md px-4 py-2">Assinar</button>
+                <h2 class="titulo-poster">Descubra novos vinhos</h2>
+                <p class="paragrafo-poster">Promoções exclusivas para assinantes da plataforma</p>
+                <button class="button-assinar">Assinar</button>
             </div>
         </div>
 
-        <h3 class="text-2xl mt-10">Mais vendidos</h3>
-        <div class="grid grid-cols-6 mt-2">
-            <div class="outline-2 flex flex-col">
-                <img width="60px" src="/src/assets/imgs/vinho1.webp">
-                <p class="font-bold">Quinta de Bons Ventos 750ml</p>
-                <p class="text-gray-600">R$ 49,90</p>
+        <h3 class="sub-heading">Mais vendidos:</h3>
+        <div class="vinhos-mais-vendidos">
+            <div class="">
+                <a href="/src/pages/don-simon.html">
+                    <img width="60px" class="vinho-image" src="/src/assets/imgs/vinho-don-simon.webp" />
+                    <p class="vinho-nome">Don Simon Seleccion Tempranillo</p>
+                    <p class="vinho-preco">R$ 39,90</p>
+                </a>
+            </div>
+            <div class="">
+                <img width="60px" class=" vinho-image" src="/src/assets/imgs/vinho-rocca.webp" />
+                <p class="vinho-nome">Rocca Chianti DOCG</p>
+                <p class="vinho-preco">R$ 89,90</p>
+            </div>
+            <div class="">
+                <img width="60px" class="vinho-image" src="/src/assets/imgs/vinho-la-poderosa.webp" />
+                <p class="vinho-nome">La Poderosa Pinot Noir 2024</p>
+                <p class="vinho-preco">R$ 99,90</p>
+            </div>
+            <div class="">
+                <img width="60px" class="vinho-image" src="/src/assets/imgs/vinho-tanggier.webp" />
+                <p class="vinho-nome">Tanggier Brut Rosé</p>
+                <p class="vinho-preco">R$ 59,90</p>
             </div>
         </div>
     </main>
+    <footer class="footer">
+        <h2 class=" titulo-footer">Vinharia Agnello</h2>
+        <p class="paragrafo-footer">2025 Vinharia Agnello. Todos os direitos reservados.</p>
+    </footer>
 </body>
+
 </html>

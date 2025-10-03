@@ -1,68 +1,187 @@
-.titulo-pagina-contatos{
+.titulo-pagina-contatos {
     color: black;
     text-align: center;
     font-weight: 400;
     font-size: 50px;
 }
-.imagem-contato{
+
+.imagem-contato {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 500px; 
+    width: 500px;
 }
-.titulo-emails{
-      color: black;
-    font-weight: 700;
-}
-.titulo-endereço{
+
+.titulo-emails {
     color: black;
     font-weight: 700;
 }
-.titulo-redes-sociais{
+
+.titulo-endereço {
     color: black;
     font-weight: 700;
 }
-.tema-botao{
+
+.titulo-redes-sociais {
+    color: black;
+    font-weight: 700;
+}
+
+.tema-botao {
     color: rgb(235, 199, 151);
     font-weight: 700;
     padding: 10px;
     background-color: #6D2E46;
     border-radius: 10px;
 }
-.tema-borda-mensagem{
-    border: 3px black solid ;
+
+.tema-borda-mensagem {
+    border: 3px black solid;
     width: 400px;
 }
-.tema-borda-nome{
-    border: 2px black solid ;
-    width: 180px;
 
-} 
-.tema-borda-email{
-    border: 2px black solid ;
+.tema-borda-nome {
+    border: 2px black solid;
     width: 180px;
 
 }
-.titulo_quem_somos{
+
+.tema-borda-email {
+    border: 2px black solid;
+    width: 180px;
+
+}
+
+.titulo_quem_somos {
     color: black;
     font-size: 30px;
 
 }
-.conteudo_quem_somos{
+
+.conteudo_quem_somos {
     color: black;
     font-size: medium;
 }
 
 
-.titulo_historia{
+.titulo_historia {
     color: black;
     font-size: 30px;
-    
+
 }
-.valores_texto{
+
+.valores_texto {
     color: black;
     font-size: 30px;
-    
+
 }
 
 
+.page-header {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    outline-width: 2px;
+}
+
+.nome-logo {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.searchbar {
+    border-radius: 0.375rem;
+    background-color: rgb(209, 213, 219);
+    padding: 0.25rem;
+}
+
+.conteudo-principal {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.poster {
+    margin-top: 2rem;
+    border-radius: 1rem;
+    background-image: url(/src/assets/imgs/hero-image.jpg);
+    background-size: cover;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    color: rgb(255, 255, 255);
+    height: 30rem;
+}
+
+.titulo-poster {
+    font-size: 3.75rem;
+    line-height: 1;
+}
+
+.vinhos-mais-vendidos {
+    margin-top: 0.5rem;
+}
+
+.vinho-image {
+    margin-left: 3rem;
+}
+
+.vinho-nome {
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.vinho-preco {
+    color: rgb(75, 85, 99);
+    text-decoration: none;
+}
+
+.paragrafo-footer {
+    color: rgb(75, 85, 99);
+}
+
+.sub-heading {
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+
+.button-assinar {
+    margin-top: 2rem;
+    border-radius: 0.375rem;
+    background-color: rgb(220, 38, 38);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: #FFF;
+
+}
+
+.footer {
+    margin-top: 1.25rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    outline-width: 2px;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.titulo-footer {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+}
+
+.button-adicionar {
+    border-radius: 0.375rem;
+    background-color: rgb(220, 38, 38);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
