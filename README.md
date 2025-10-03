@@ -16,5 +16,11 @@ Este projeto é o desenvolvimento de um portal de e-commerce para a Vinheria Agn
 * HTML5
 * CSS3
 
+## Links
 
+[GitHub Pages](https://renansantos0.github.io/vinharia-agnello-site/)
+
+Caso não funcione direito:
+
+[Vercel](https://vinharia-agnello-site.vercel.app/)
 
