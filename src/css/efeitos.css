@@ -18,3 +18,18 @@
     padding: 8px; 
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+.tema-borda-nome:focus,
+.tema-borda-email:focus,
+.tema-borda-mensagem:focus {
+    border-color: #8c1a4b; 
+    box-shadow: 0 0 8px rgba(140, 26, 75, 0.5); 
+    outline: none; 
+}
+
+
+.tema-borda-nome:invalid,
+.tema-borda-email:invalid {
+    border-color: #e60000;
+    background-color: #fff8f8;
+} 
