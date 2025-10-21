@@ -90,3 +90,41 @@ p {
   transition: transform 0.2s ease;
 }
 
+.conteudo_quem_somos:hover,
+.conteudo_historia:hover {
+  transform: scale(1.01);
+}
+
+
+img {
+  width: 280px;
+  border-radius: 8px;
+  margin: 10px 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.footer {
+  background-color: #5a0a2c;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  transition: background-color 0.3s ease;
+}
+
+.footer:hover {
+  background-color: #7a2137;
+}
+
+::selection {
+  background-color: #7a2137;
+  color: #fff;
+}
