@@ -1,0 +1,20 @@
+.tema-botao {
+    transition: background-color 0.3s ease,  0.2s ease;
+    cursor: pointer; 
+    
+}
+
+.tema-botao:hover {
+    background-color: #5a0a2c; 
+    transform: scale(1.05); 
+}
+
+
+.tema-borda-nome,
+.tema-borda-email,
+.tema-borda-mensagem {
+    border: 2px solid #ccc; 
+    border-radius: 4px; 
+    padding: 8px; 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
