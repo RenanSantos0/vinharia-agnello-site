@@ -1,34 +1,86 @@
+.nav-link {
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.nav-link:hover {
+    color: #a37c52; 
+    transform: scale(1.1); 
+}
+
 .tema-botao {
-    transition: background-color 0.3s ease, 0.2s ease;
-    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
 .tema-botao:hover {
-    background-color: #5a0a2c;
+    background-color: #5a3a22; 
+    color: white;
     transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
 }
 
-.tema-borda-nome,
-.tema-borda-email,
-.tema-borda-mensagem {
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    padding: 8px;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+.tema-botao:active {
+    transform: scale(0.98); 
+    background-color: #4a2f1c; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.searchbar:focus,
 .tema-borda-nome:focus,
 .tema-borda-email:focus,
 .tema-borda-mensagem:focus {
-    border-color: #8c1a4b;
-    box-shadow: 0 0 8px rgba(140, 26, 75, 0.5);
-    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    border-color: #a37c52; 
+    box-shadow: 0 0 8px rgba(163, 124, 82, 0.5); 
+    outline: none; 
 }
 
-.tema-borda-nome:invalid,
-.tema-borda-email:invalid {
-    border-color: #e60000;
-    background-color: #fff8f8;
+.imagem-contato {
+    transition: transform 0.5s ease-in-out;
+}
+
+.imagem-contato:hover {
+    transform: rotate(2deg) scale(1.03); 
+}
+
+.titulo-pagina-contatos::after {
+    content: ''; 
+    display: block; 
+    width: 100px; 
+    height: 3px; 
+    background-color: #a37c52; 
+    margin: 10px auto 0; 
+    border-radius: 2px;
+}
+
+.searchbar::placeholder,
+.tema-borda-nome::placeholder,
+.tema-borda-email::placeholder,
+.tema-borda-mensagem::placeholder {
+    color: #999;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.titulo-pagina-contatos {
+    animation-name: fadeInSlideUp;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
 }
 
 
