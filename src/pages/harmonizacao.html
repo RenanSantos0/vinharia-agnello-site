@@ -4,100 +4,81 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-        content="Aprenda a arte da harmonização de vinhos na Vinharia Agnello. Descubra as melhores combinações de vinhos tintos, brancos, espumantes e doces com carnes, queijos, frutos do mar e sobremesas.">
-    <meta name="keywords"
-        content="harmonização de vinhos, combinar vinho e comida, dicas de harmonização, vinho tinto, vinho branco, espumante, cabernet sauvignon, pinot noir, chardonnay, enogastronomia, vinharia agnello">
-    <title>Vinharia Agnello - Harmonização de Vinhos</title>
-    <link rel="stylesheet" href="/src/css/style.css" />
+    <title>Harmonização de Vinhos</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/efeitos.css" />
 </head>
 
 <body>
-    <header class="page-header">
-        <div class="">
-            <a href="/index.html">
-                <h1 class="nome-logo">Vinharia Agnello</h1>
-            </a>
-            <nav class="">
-                <ul class="">
-                    <li>
-                        <a class="nav-link" href="/src/pages/harmonizacao.html">Harmonização</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="/src/pages/quem-somos.html">Quem somos</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="/src/pages/contato.html">Contato</a>
-                    </li>
+    <header>
+        <div class="header-container">
+            <h1>Vinharia Agnello</h1>
+            <nav>
+                <ul>
+                    <li><a href="../../src/pages/vinhos.html">Vinhos</a></li>
+                    <li><a class="active" href="../../src/pages/harmonizacao.html">Harmonização</a></li>
+                    <li><a href="../../src/pages/quem-somos.html">Quem somos</a></li>
+                    <li><a href="../../src/pages/contato.html">Contato</a></li>
                 </ul>
             </nav>
+            <input type="text" placeholder="Procurar vinho..." aria-label="Pesquisar vinhos" />
         </div>
-
-        <input type="text" placeholder="Procurar vinho..." class="searchbar" />
     </header>
 
+    <main>
+        <h2>Harmonização de Vinhos</h2>
+        <p>Conheça os principais tipos de vinhos e descubra como combiná-los com diferentes alimentos para realçar o melhor de cada sabor.</p>
 
-
-    <main class="conteudo-principal">
-        <h2 class="titulo-poster">Harmonização de Vinhos</h2>
-        <p class="paragrafo-harmonizacao">Conheça os principais tipos de vinhos e descubra como combiná-los com
-            diferentes
-            alimentos para realçar o melhor de cada sabor.</p>
-
-        <section class="secao">
-            <h3 class=" titulo-vinhos">Vinhos Tintos</h3>
-            <p class="descricao-harmonizacao">Combinam com carnes vermelhas, queijos fortes e massas com molhos
-                encorpados.</p>
-            <ul class="">
-                <li><strong>Cabernet Sauvignon:</strong> ótimo com churrasco, carne assada e queijos curados como
-                    parmesão.</li>
+        <section>
+            <h3>Vinhos Tintos</h3>
+            <p>Combinam com carnes vermelhas, queijos fortes e massas com molhos encorpados.</p>
+            <ul>
+                <li><strong>Cabernet Sauvignon:</strong> ótimo com churrasco, carne assada e queijos curados como parmesão.</li>
                 <li><strong>Pinot Noir:</strong> combina bem com frango grelhado, salmão e cogumelos.</li>
                 <li><strong>Malbec:</strong> excelente com carne de cordeiro e pratos picantes.</li>
             </ul>
-            <img src="../assets/imgs/harmonizacaotinto.jpg " width="500px" height="500px">
+            <div class="vinho-img" tabindex="0" aria-label="Imagem de harmonia tintos">
+                <img src="../assets/imgs/harmonizacaotinto.jpg" width="500" height="500" alt="Vinhos tintos" />
+            </div>
         </section>
 
-        <section class="secao">
-            <h3 class="titulo-vinhos">Vinhos Brancos</h3>
-            <p class=" descricao-harmonizacao">Ideais para pratos mais leves, com sabores sutis e toques cítricos.</p>
-            <ul class="">
+        <section>
+            <h3>Vinhos Brancos</h3>
+            <p>Ideais para pratos mais leves, com sabores sutis e toques cítricos.</p>
+            <ul>
                 <li><strong>Sauvignon Blanc:</strong> ótimo com frutos do mar, ceviche e saladas verdes.</li>
                 <li><strong>Chardonnay:</strong> vai bem com massas ao molho branco, peixes e frango assado.</li>
-                <li><strong>Riesling:</strong> combina com pratos levemente apimentados, como comida tailandesa.
-                </li>
+                <li><strong>Riesling:</strong> combina com pratos levemente apimentados, como comida tailandesa.</li>
             </ul>
-            <img src="../assets/imgs/harmonizacaobranco.jpg" width="500px" height="500px">
+            <div class="vinho-img" tabindex="0" aria-label="Imagem de harmonia brancos">
+                <img src="../assets/imgs/harmonizacaobranco.jpg" width="500" height="500" alt="Vinhos brancos" />
+            </div>
         </section>
 
-        <section class="secao">
-            <h3 class="titulo-vinhos">Espumantes</h3>
-            <p class=" descricao-harmonizacao">Refrescantes e versáteis, combinam com quase tudo, especialmente petiscos
-                e entradas.
-            </p>
-            <ul class="lista-harmonizacao ">
+        <section>
+            <h3>Espumantes</h3>
+            <p>Refrescantes e versáteis, combinam com quase tudo, especialmente petiscos e entradas.</p>
+            <ul>
                 <li><strong>Brut:</strong> perfeito com batata frita, sushi e canapés.</li>
                 <li><strong>Moscatel:</strong> ótimo para sobremesas leves e frutas.</li>
             </ul>
-            <img src="../assets/imgs/harmonizacaoespumante.webp" width="500px" height="500px">
+            <div class="vinho-img" tabindex="0" aria-label="Imagem de espumantes">
+                <img src="../assets/imgs/harmonizacaoespumante.webp" width="500" height="500" alt="Espumantes" />
+            </div>
         </section>
 
-        <section class="secao">
-            <h3 class="titulo-vinhos">Vinhos Doces</h3>
-            <p class=" descricao-harmonizacao">Ideais para acompanhar sobremesas e criar contrastes com queijos azuis.
-            </p>
-            <ul class="">
+        <section>
+            <h3>Vinhos Doces</h3>
+            <p>Ideais para acompanhar sobremesas e criar contrastes com queijos azuis.</p>
+            <ul>
                 <li><strong>Vinho do Porto:</strong> excelente com chocolate amargo ou gorgonzola.</li>
                 <li><strong>Late Harvest:</strong> combina com frutas secas e tortas doces.</li>
             </ul>
-            <img src="../assets/imgs/harmonizacaodoce.png" width="500px" height="500px">
+            <div class="vinho-img" tabindex="0" aria-label="Imagem de vinhos doces">
+                <img src="../assets/imgs/harmonizacaodoce.png" width="500" height="500" alt="Vinhos doces" />
+            </div>
         </section>
     </main>
-    <footer class="footer">
-        <h2 class=" titulo-footer">Vinharia Agnello</h2>
-        <p class="paragrafo-footer">2025 Vinharia Agnello. Todos os direitos reservados.</p>
-    </footer>
 </body>
-
-</html>
 
 </html>

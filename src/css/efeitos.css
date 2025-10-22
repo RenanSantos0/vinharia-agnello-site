@@ -1,130 +1,198 @@
 .tema-botao {
-    transition: background-color 0.3s ease,  0.2s ease;
-    cursor: pointer; 
-    
+    transition: background-color 0.3s ease, 0.2s ease;
+    cursor: pointer;
 }
 
 .tema-botao:hover {
-    background-color: #5a0a2c; 
-    transform: scale(1.05); 
+    background-color: #5a0a2c;
+    transform: scale(1.05);
 }
-
 
 .tema-borda-nome,
 .tema-borda-email,
 .tema-borda-mensagem {
-    border: 2px solid #ccc; 
-    border-radius: 4px; 
-    padding: 8px; 
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .tema-borda-nome:focus,
 .tema-borda-email:focus,
 .tema-borda-mensagem:focus {
-    border-color: #8c1a4b; 
-    box-shadow: 0 0 8px rgba(140, 26, 75, 0.5); 
-    outline: none; 
+    border-color: #8c1a4b;
+    box-shadow: 0 0 8px rgba(140, 26, 75, 0.5);
+    outline: none;
 }
-
 
 .tema-borda-nome:invalid,
 .tema-borda-email:invalid {
     border-color: #e60000;
     background-color: #fff8f8;
-} 
+}
+
 
 /*efeitos quem somos*/
 
 body {
-  font-family: "Segoe UI", Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #faf8f6;
-  color: #1a1a1a;
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #faf8f6;
+    color: #1a1a1a;
 }
-
 
 .conteudo-principal {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 0 20px;
-  animation: aparecer 0.8s ease;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    animation: aparecer 0.8s ease;
 }
-
 
 .titulo_quem_somos,
 .titulo_historia,
 .valores_texto {
-  color: #5a0a2c;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  position: relative;
-  transition: color 0.3s ease;
+    color: #5a0a2c;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    transition: color 0.3s ease;
 }
-
 
 .titulo_quem_somos::before,
 .titulo_historia::before,
 .valores_texto::before {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 3px;
-  background-color: #7a2137;
-  margin-bottom: 6px;
-  border-radius: 2px;
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: #7a2137;
+    margin-bottom: 6px;
+    border-radius: 2px;
 }
-
 
 .titulo_quem_somos:hover,
 .titulo_historia:hover,
 .valores_texto:hover {
-  color: #7a2137;
+    color: #7a2137;
 }
-
 
 .conteudo_quem_somos,
 .conteudo_historia,
 p {
-  font-size: 1rem;
-  transition: transform 0.2s ease;
+    font-size: 1rem;
+    transition: transform 0.2s ease;
 }
 
 .conteudo_quem_somos:hover,
 .conteudo_historia:hover {
-  transform: scale(1.01);
+    transform: scale(1.01);
 }
 
-
 img {
-  width: 280px;
-  border-radius: 8px;
-  margin: 10px 0;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 280px;
+    border-radius: 8px;
+    margin: 10px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    transform: scale(1.03);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
 }
 
-
-
-
 .footer {
-  background-color: #5a0a2c;
-  color: white;
-  text-align: center;
-  padding: 15px 0;
-  margin-top: 40px;
-  transition: background-color 0.3s ease;
+    background-color: #5a0a2c;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    transition: background-color 0.3s ease;
 }
 
 .footer:hover {
-  background-color: #7a2137;
+    background-color: #7a2137;
 }
 
 ::selection {
-  background-color: #7a2137;
-  color: #fff;
+    background-color: #7a2137;
+    color: #fff;
+}
+
+
+/* harmonização */
+
+@keyframes pulsarVinho {
+    0% {
+        box-shadow: 0 0 0 0 rgba(128, 0, 32, 0.18);
+        transform: scale(0.995);
+        opacity: 1;
+    }
+    40% {
+        box-shadow: 0 0 18px 8px rgba(128, 0, 32, 0.45);
+        transform: scale(1);
+        opacity: 1;
+    }
+    80% {
+        box-shadow: 0 0 10px 4px rgba(128, 0, 32, 0.35);
+        transform: scale(0.998);
+        opacity: 1;
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(128, 0, 32, 0.18);
+        transform: scale(0.995);
+        opacity: 1;
+    }
+}
+
+.vinho-img::after {
+    background: transparent;
+    box-shadow: 0 0 0 0 rgba(128, 0, 32, 0.18);
+    animation: pulsarVinho 6s ease-in-out infinite;
+    transition: box-shadow 400ms ease;
+}
+
+@keyframes aparecerSuave {
+    0% {
+        opacity: 0;
+        transform: translateY(8px) scale(0.98);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+section {
+    animation: aparecerSuave 700ms ease-out both;
+}
+
+.vinho-img:hover::after,
+.vinho-img:focus::after {
+    box-shadow: 0 0 26px 10px rgba(128, 0, 32, 0.55);
+    transform: translateZ(0);
+}
+
+@keyframes giroSutil {
+    0% {
+        transform: rotate(-1deg);
+    }
+    50% {
+        transform: rotate(0.5deg);
+    }
+    100% {
+        transform: rotate(-1deg);
+    }
+}
+
+h2 {
+    animation: giroSutil 8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .vinho-img::after,
+    section,
+    h2 {
+        animation: none !important;
+        transition: none !important;
+    }
 }

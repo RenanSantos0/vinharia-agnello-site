@@ -43,19 +43,16 @@
 .tema-borda-nome {
     border: 2px black solid;
     width: 180px;
-
 }
 
 .tema-borda-email {
     border: 2px black solid;
     width: 180px;
-
 }
 
 .titulo_quem_somos {
     color: black;
     font-size: 30px;
-
 }
 
 .conteudo_quem_somos {
@@ -63,19 +60,15 @@
     font-size: medium;
 }
 
-
 .titulo_historia {
     color: black;
     font-size: 30px;
-
 }
 
 .valores_texto {
     color: black;
     font-size: 30px;
-
 }
-
 
 .page-header {
     padding-left: 6rem;
@@ -139,7 +132,6 @@
 
 .paragrafo-footer {
     color: rgb(75, 85, 99);
-
 }
 
 .sub-heading {
@@ -147,8 +139,6 @@
     font-size: 1.5rem;
     line-height: 2rem;
 }
-
-
 
 .button-assinar {
     margin-top: 2rem;
@@ -159,7 +149,6 @@
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     color: #FFF;
-
 }
 
 .footer {
@@ -213,4 +202,197 @@
     padding-left: 1.5rem;
     margin-bottom: 1rem;
     list-style-type: disc;
+}
+
+
+/* harmonização */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background: #fbf8f6;
+    color: #222;
+    -webkit-font-smoothing: antialiased;
+}
+
+header {
+    background: #fff;
+    border-bottom: 1px solid #e6e0de;
+    padding: 18px 24px;
+}
+
+.header-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin: 0;
+    color: #4b0010;
+    font-size: 1.5rem;
+    letter-spacing: 0.2px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 6px 8px;
+    border-radius: 6px;
+    transition: color 250ms ease, transform 200ms ease, background 200ms ease;
+    display: inline-block;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #800020;
+    transform: translateY(-2px) rotate(-1deg);
+    /* transform (rotate) */
+}
+
+nav a:focus {
+    outline: 2px solid rgba(128, 0, 32, 0.25);
+    background: rgba(128, 0, 32, 0.04);
+    transform: translateY(-1px);
+}
+
+nav a:active {
+    transform: translateY(0) rotate(2deg);
+    /* transform used again */
+    color: #4b000e;
+}
+
+nav a.active {
+    color: #800020;
+    text-decoration: underline;
+}
+
+header input {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #d6d0cf;
+    transition: border-color 220ms ease, box-shadow 220ms ease;
+}
+
+header input:focus {
+    border-color: #800020;
+    box-shadow: 0 6px 18px rgba(128, 0, 32, 0.08);
+}
+
+main {
+    max-width: 900px;
+    margin: 42px auto;
+    padding: 0 18px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #4b0010;
+    margin: 0 0 16px 0;
+    position: relative;
+    padding-left: 12px;
+    margin-bottom: 18px;
+}
+
+h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 6px;
+    height: calc(100% - 8px);
+    background: linear-gradient(180deg, #8b0020, #4b0010);
+    border-radius: 3px;
+}
+
+section {
+    margin-bottom: 46px;
+}
+
+h3 {
+    color: #800020;
+    margin-bottom: 8px;
+    font-size: 1.25rem;
+}
+
+p,
+ul {
+    margin-bottom: 12px;
+    color: #333;
+}
+
+section ul li:first-child {
+    font-weight: 700;
+    color: #2b0a0e;
+}
+
+.vinho-img {
+    display: inline-block;
+    padding: 8px;
+    border-radius: 12px;
+    position: relative;
+    transition: transform 400ms ease, box-shadow 400ms ease;
+}
+
+.vinho-img::after {
+    content: "";
+    position: absolute;
+    inset: 6px;
+    border-radius: 10px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.vinho-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    position: relative;
+    z-index: 0;
+    transition: transform 600ms cubic-bezier(.2, .9, .3, 1), filter 450ms ease;
+}
+
+.vinho-img:hover img,
+.vinho-img:focus img {
+    transform: scale(1.02) rotate(-0.5deg);
+    filter: saturate(1.05) contrast(1.02);
+}
+
+.vinho-img:focus {
+    outline: none;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+    transform: translateY(-4px);
+}
+
+@media (max-width: 720px) {
+    .header-container {
+        flex-direction: column;
+        gap: 12px;
+        align-items: stretch;
+    }
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    main {
+        padding: 0 14px;
+    }
 }
